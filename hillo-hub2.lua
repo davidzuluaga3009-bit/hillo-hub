@@ -9,8 +9,6 @@
         » Premium Hub Mobile Version «
 ]]--
 
-
-```lua
 local v0=loadstring(game:HttpGet("https://sirius.menu/rayfield"))();
 local v1=game:GetService("Players");
 local v2=game:GetService("UserInputService");
