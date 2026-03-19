@@ -9,7 +9,13 @@
         » Premium Hub Mobile Version «
 ]]--
 
-local v0=loadstring(game:HttpGet("https://sirius.menu/rayfield"))();
+local requestFunc = request or http_request or (syn and syn.request)
+
+local res = requestFunc({
+    Url = "https://sirius.menu/rayfield",
+    Method = "GET"
+})
+local v0 = loadstring(res.Body)()
 local v1=game:GetService("Players");
 local v2=game:GetService("UserInputService");
 local v3=game:GetService("RunService");
